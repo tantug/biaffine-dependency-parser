@@ -1,11 +1,9 @@
 import torch
 from torch import nn
-from torch.autograd import Variable
-from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
 from numpy import prod
 
 from data import PAD_INDEX
-from embedding import WordEmbedding, WordTagEmbedding, RecurrentCharEmbedding, ConvolutionalCharEmbedding
+from tr_depparse_service.embedding import WordEmbedding, WordTagEmbedding, RecurrentCharEmbedding, ConvolutionalCharEmbedding
 from nn import MLP, BiAffine
 from encoder import RecurrentEncoder, ConvolutionalEncoder, NoEncoder
 from transformer import TransformerEncoder

@@ -1,12 +1,11 @@
 import numpy as np
 import torch
-import torch.nn as nn
 from torch.autograd import Variable
 import torch.nn.functional as F
 import matplotlib.pyplot as plt
 
-from data import Dictionary, Corpus, PAD_INDEX
-from mst import mst
+from data import Dictionary, Corpus
+from tr_depparse_service.mst import mst
 
 
 def plot(S_arc, heads):
